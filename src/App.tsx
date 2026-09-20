@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Waves, Video } from 'lucide-react';
+import { Analytics } from '@vercel/analytics/react';
 import { SurveyProvider, useSurveyStore } from './store/surveyStore';
 import { DebrisCategory, VerificationStatus } from './types/sonar';
 import { TopMissionBar } from './components/TopMissionBar';
@@ -391,6 +392,7 @@ export default function App() {
   return (
     <SurveyProvider>
       <MarineWorkstationInner />
+      <Analytics />
     </SurveyProvider>
   );
 }
