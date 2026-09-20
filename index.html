@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sonar Debris &amp; Anomaly Detector</title>
+    <meta name="description" content="Operational workstation for detecting, classifying, and mapping underwater debris and seabed anomalies from side-scan sonar and video." />
+    <meta property="og:title" content="Sonar Debris &amp; Anomaly Detector" />
+    <meta property="og:description" content="Operational workstation for detecting, classifying, and mapping underwater debris and seabed anomalies from side-scan sonar and video." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if (typeof window !== 'undefined') {
+        if (!window.global) {
+          window.global = window;
+        }
+        if (typeof window.Buffer === 'undefined') {
+          window.Buffer = {
+            isBuffer: function (obj) { return false; },
+            byteLength: function (str) {
+              if (typeof str !== 'string') return 0;
+              return new TextEncoder().encode(str).length;
+            },
+            from: function (data) {
+              if (typeof data === 'string') {
+                return new TextEncoder().encode(data);
+              }
+              return new Uint8Array(data);
+            }
+          };
+        }
+      }
+    </script>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

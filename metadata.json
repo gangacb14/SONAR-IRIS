@@ -1,0 +1,8 @@
+{
+  "name": "Remix Remix Remix Remix Remix Side-Scan Sonar Marine Debris \u0026 Anomaly Analysis Platform",
+  "description": "Operational workstation for detecting, classifying, and analyzing underwater marine debris and seabed anomalies from side-scan sonar imagery (SIH 2026 Problem Statement 26057).",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
